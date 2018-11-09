@@ -766,7 +766,7 @@ choice
 	help
 	  Selects the default low power mode of the memory during idle
 	  sleep.
-	  
+  
 	config MSM_MEMORY_LOW_POWER_MODE_IDLE_ACTIVE
 		bool "Memory active"
 
@@ -1049,12 +1049,4 @@ config FSM9900_GSM_NL
 	  The DIQ functionality is disabled and the UART functionality is enabled.
 	  The serial port connection can be established to communicate with the
 	  GSM NL module.
-
-config ASMP
-	bool "Multi-core automatic hotplug support"
-	depends on SMP
-	default y
-	help
-	  Automatically hotplugs the multiple cpu cores on and off
-	  based on cpu load and suspend state
  endif
